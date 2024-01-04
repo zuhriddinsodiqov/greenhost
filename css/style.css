@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+body {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+#header {
+  width: 100%;
+  background-color: #7EBC12;
+  background-image: url(/img/bg-round-2.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  border-bottom-right-radius: 70%;
+  border-bottom-left-radius: 20%;
+}
+#header .navigation {
+  position: fixed;
+  z-index: 999;
+  background-color: #000;
+  width: 100%;
+  height: 10vh;
+}
+#header .navigation .navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .navigation .navbar .nav .select {
+  border: 0;
+  outline: 0;
+  background-color: #7EBC12;
+}
+#header .navigation .navbar .nav a {
+  transition: all 0.5s linear;
+}
+#header .navigation .navbar .nav a:hover {
+  color: red;
+}
+
+.banner {
+  background-image: url(/img/bg-round.png);
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+.search {
+  background-image: url(/img/bg-domain.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.search .hr {
+  border-top: 1px solid #000;
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+}
+.search .hrr {
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+}
+
+.green .hr {
+  border-top: 1px solid #000;
+  width: 10%;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+.our .hr {
+  border-top: 1px solid #000;
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.solid {
+  width: 100%;
+  height: 10vh;
+  display: block;
+  text-align: right;
+}
+.solid i {
+  margin-top: 1rem;
+}
+
+.server .hr {
+  border-top: 1px solid #000;
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.server .hrr {
+  border-top: 1px solid #000;
+  width: 10%;
+  border-bottom: 1px solid #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team .hr {
+  border-top: 1px solid #000;
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 1px solid #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.team__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+.team__content .item {
+  transition: all 0.5s linear;
+}
+.team__content .item:hover {
+  background-color: red;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  padding: 4rem 0;
+  color: #fff;
+}
+
+.footer__content {
+  background-image: url(/img/bg-round-2.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.footer__content a {
+  color: #fff;
+  margin-bottom: 0.2rem;
+}
+.footer__content form input {
+  outline: 0;
+}
+.footer__content form textarea {
+  outline: 0;
+}/*# sourceMappingURL=style.css.map */

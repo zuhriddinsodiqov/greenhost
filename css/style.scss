@@ -1,0 +1,173 @@
+@import './_global';
+@mixin card (){
+    width: 100%;
+    padding: 4rem 0;
+}
+@mixin grid($repeat){
+    display: grid;
+    grid-template-columns: $repeat;
+}
+@mixin btn($bgc, $color, $bgcolor, $blue){
+    padding: 20px 4rem;
+    background-color: $bgc;
+    color: $color;
+    border: 0;
+    outline: 0;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    transition: all 0.5s linear;
+    &:hover{
+        background-color: $bgcolor;
+        color: $blue;
+    }
+}
+#header{
+    width: 100%;        
+    background-color: #7EBC12;
+    background-image: url(/img/bg-round-2.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    border-bottom-right-radius: 70%;
+    border-bottom-left-radius: 20%;
+    .navigation{
+        position: fixed;
+        z-index: 999;
+        background-color: #000;
+        width: 100%;
+        height: 10vh;
+        .navbar{
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .nav{
+                .select{
+                    border: 0;
+                        outline: 0;
+                        background-color: #7EBC12; 
+                }
+                a{
+                    transition: all 0.5s linear;
+                    &:hover{
+                        color: red;
+                    }
+                }
+            }
+        }
+    }
+}
+.banner{
+    background-image: url(/img/bg-round.png);
+    background-position: center  left;
+    background-repeat: no-repeat;
+}
+.search{
+    .hr{
+        border-top: 1px solid #000;
+        width: 10%;
+         margin: 0 auto;
+         border-bottom: 1px solid #000;
+    }
+    .hrr{
+        width: 10%;
+         margin: 0 auto;
+         border-bottom: 1px solid #000; 
+    }
+    background-image: url(/img/bg-domain.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+.green{
+    .hr{
+        border-top: 1px solid #000;
+        width: 10%;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;  
+    }
+}
+.our{
+    .hr{
+        border-top: 1px solid #000;
+        width: 10%;
+         margin: 0 auto;
+         border-bottom: 1px solid #000;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        }
+}
+.solid{
+    width: 100%;
+    height: 10vh;
+    display: block;
+    text-align: right;
+    
+    i{
+       margin-top: 1rem;
+    }
+
+}
+.server{
+    .hr{
+        border-top: 1px solid #000;
+        width: 10%;
+        margin: 0 auto;
+         border-bottom: 1px solid #000;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        }
+    .hrr{
+        border-top: 1px solid #000;
+        width: 10%;
+
+         border-bottom: 1px solid #000;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        }
+}
+.team{
+    .hr{
+        border-top: 1px solid #000;
+        width: 10%;
+        margin: 0 auto;
+         border-bottom: 1px solid #000;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        }
+}
+.team__content{
+    @include grid(repeat(4,1fr));
+    gap: 2rem;
+    .item{
+        transition: all 0.5s linear;
+        &:hover{
+            background-color: red;
+        }
+    }
+}
+.footer{
+    width: 100%;
+    height: auto;
+    // background-image: url(/img/bg-bottom-footer.png);
+    // background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 4rem 0;
+    color: #fff;
+}
+.footer__content{
+    background-image: url(/img/bg-round-2.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+    a{
+        color: #fff;
+        margin-bottom: 0.2rem;
+    }
+    form{
+        input{
+            outline: 0;
+        }
+        textarea{
+            outline: 0;
+        }
+    }
+}
