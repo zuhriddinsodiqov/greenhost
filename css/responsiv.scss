@@ -1,0 +1,48 @@
+@media only screen and (max-width:768px)   {
+    #header{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        .navigation{
+            .navbar{
+                .nav{
+                    .fa-bars{
+                        display: block;
+                    }
+                    a{
+                        display: none;
+                    }
+                    .fa-searchengin{
+                        display: none;
+                    }
+                    button{
+                        display: none;
+                    }
+                    select{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .search{
+        button{
+            display: block;
+            margin: 0 auto;
+            width: 20%;
+            margin-top: 1rem;
+        }
+    }
+    .team__content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer{
+        form{
+            input{
+                display: block;
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
